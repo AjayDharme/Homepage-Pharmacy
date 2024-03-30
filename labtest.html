@@ -1,0 +1,130 @@
+<!-- labtest.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Form</title>
+    <link rel="stylesheet" href="labtest.css">
+</head>
+<body>
+        <h2>1. Your Contact Detail</h2>
+ 
+    <div class="container">
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="patientid">Patient ID (if exists):</label>
+                <input type="text" id="patientid" name="patientid">
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact Number:</label>
+                <input type="tel" id="contact" name="contact" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email" >
+            </div>
+            <h2>2. Address</h2>
+
+            <div class="form-group">
+                <label for="h-no">H-NO:</label>
+                <input type="h-no" id="h-no" name="H-NO" required>
+            </div>
+            <div class="form-group">
+                <label for="street">Street:</label>
+                <input type="street" id="street" name="Street" required>
+            </div><div class="form-group">
+                <label for="area">Area:</label>
+                <input type="area" id="area" name="Area" required>
+            </div>
+            <div class="form-group">
+                <label for="district">District:</label>
+                <select id="district" name="district">
+                    <option value="chosen" selected>Chosen</option>
+                    <option value="district1">Akola</option>
+                    <option value="district2">Amravti</option>
+                    <option value="district2">Pune</option>
+                    <option value="district2">Mumbai</option>
+                    <!-- Add more districts as needed -->
+                </select>
+            </div>
+
+            <h2>3. Choose The Test Type</h2>
+
+            <p>Check at least one box without fail</p>
+            <div class="form-section">
+                <div class="form-group">
+                    <input type="checkbox" id="cbc" name="test-type" value="cbc">
+                    <label for="cbc">CBC</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="complete-urine" name="test-type" value="complete-urine">
+                    <label for="complete-urine">Complete Urine</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="lipid-profile" name="test-type" value="lipid-profile">
+                    <label for="lipid-profile">Lipid Profile</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="tsh" name="test-type" value="tsh">
+                    <label for="tsh">Thyroid Stimulating Hormone (TSH)</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="glucose-test" name="test-type" value="glucose-test">
+                    <label for="glucose-test">Glucose Test</label>
+                </div>
+                <div id="test-type-error" class="error-message"></div>
+            </div>
+
+            
+            <div class="form-section">
+                <h2>Do you want a hard copy of the report also?</h2>
+                <div class="form-group">
+                    <input type="radio" id="yes" name="hard-copy" value="yes">
+                    <label for="yes">Yes</label>
+                </div>
+                <div class="form-group">
+                    <input type="radio" id="no" name="hard-copy" value="no">
+                    <label for="no">No</label>
+                </div>
+            </div>
+            
+            <div class="form-section">
+                <h2>Select Your Comfortable Date and Time</h2>
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="form-group">
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time">
+                </div>
+            </div>
+            
+            <div class="form-section">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    
+    <div class="fixed-image">
+        <img src="lab-test.jpg" alt="Image">
+    </div>
+            </div>
+            <div class="form-group">
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <aside>
+            <!-- Image for aside here -->
+        </aside>
+    </div>
+    
+</body>
+</html>
